@@ -1,6 +1,5 @@
 /node_modules
 /.idea
-/dist
 /config
 /.npmrc
 .DS_Store

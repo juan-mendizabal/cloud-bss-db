@@ -15,6 +15,7 @@ export async function executeCloudBSSQuery(query: string): Promise<any> {
     try {
         connection = await odbc.connect(connectionString);
         const result = await connection.query(query);
+        console.log("result", result);
         return result;
     } catch (error) {
         console.error('Error executing query:', error);
